@@ -3,7 +3,7 @@
 
 - 🌱 I’m currently learning **ReactJS**
 
-- 💬 Ask me about **HTML , CSS , JavaScript , C++ , TypeScript , ReactJS**
+- 💬 Ask me about **JavaScript , C++ , TypeScript , ReactJS**
 
 - 📫 How to reach me **mohammadzafeer2610@gmail.com**
 
