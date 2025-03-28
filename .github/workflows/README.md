@@ -73,3 +73,7 @@
 </div>
 
 ###
+
+### 🐍 GitHub Contribution Snake
+
+![Snake animation](https://github.com/mohdzafeer/mohdzafeer/blob/output/dist/snake.svg)
