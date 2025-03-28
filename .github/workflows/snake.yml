@@ -2,7 +2,7 @@ name: Generate snake animation
 
 on:
   schedule:
-    - cron: "* */12 * * *" # Run every 12 hours
+    - cron: "* */12 * * *" # Runs every 12 hours
   workflow_dispatch:
   push:
     branches:
@@ -16,16 +16,17 @@ jobs:
     timeout-minutes: 5
 
     steps:
-      - name: generate snake.svg
-        uses: mohdzafeer/snk/svg-only@main  # Use your forked version
+      - name: Checkout repository
+        uses: actions/checkout@v4
 
+      - name: Generate snake.svg
+        uses: mohdzafeer/snk@main  # Use YOUR forked repo
         with:
           github_user_name: ${{ github.repository_owner }}
           outputs: dist/snake.svg?palette=github-dark
 
-      - name: push snake.svg to the output branch
-        uses: mohdzafeer/ghaction-github-pages@main  # Use your forked version
-
+      - name: Push snake.svg to the output branch
+        uses: mohdzafeer/ghaction-github-pages@main  # Use YOUR forked repo
         with:
           target_branch: output
           build_dir: dist
